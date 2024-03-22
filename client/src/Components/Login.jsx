@@ -21,7 +21,7 @@ function Login() {
   
     setLoading(true);
 
-    axios.post('http://localhost:5000/api/login', {email, password}, {withCredentials: true})
+    axios.post('https://mern-app-2fe1.onrender.com/api/login', {email, password}, {withCredentials: true})
 
   .then(result => {
     console.log(result);

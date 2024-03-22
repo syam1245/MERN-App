@@ -26,11 +26,8 @@ app.use(
         contentSecurityPolicy: {
             directives: {
                 defaultSrc: ["'self'"],
-                connectSrc: ["wss://wft-geo-db.p.rapidapi.com",
-                    "https://wft-geo-db.p.rapidapi.com",
-                    "https://api.openweathermap.org",
-                    "http://localhost:5000",
-                    "https://weather-app-ackf.onrender.com"],
+                connectSrc: ["http://localhost:5000",
+                    "https://mern-app-2fe1.onrender.com"],
             },
         },
     })

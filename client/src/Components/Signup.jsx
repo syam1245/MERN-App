@@ -20,7 +20,7 @@ function Signup() {
     const handleSubmit = (e) => {
         e.preventDefault();
         setLoading(true);
-        axios.post('http://localhost:5000/api/register', {childName, email, password}, {withCredentials: true})
+        axios.post('https://mern-app-2fe1.onrender.com/api/register', {childName, email, password}, {withCredentials: true})
 
             .then(result => {
                 console.log(result);

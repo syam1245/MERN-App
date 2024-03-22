@@ -46,7 +46,7 @@ function Account() {
                     return;
                 }
 
-                const response = await axios.get('http://localhost:5000/api/getProfileData', {
+                const response = await axios.get('https://mern-app-2fe1.onrender.com/api/getProfileData', {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -77,7 +77,7 @@ function Account() {
 
             setSaveLoading(true);
 
-            await axios.put('http://localhost:5000/api/updateProfileData', profileData, {
+            await axios.put('https://mern-app-2fe1.onrender.com/api/updateProfileData', profileData, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -116,7 +116,7 @@ function Account() {
 
             setDeleteLoading(true);
 
-            const response = await axios.delete('http://localhost:5000/api/deleteProfileData', {
+            const response = await axios.delete('https://mern-app-2fe1.onrender.com/api/deleteProfileData', {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
